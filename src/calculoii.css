@@ -1,0 +1,102 @@
+/* Add this CSS to your existing stylesheet or create a new one */
+html {
+    scroll-behavior: smooth;
+}
+
+.syllabus {
+    display: flex;
+    margin: 0;
+    max-width: 90vw;
+}
+
+Latex {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* Light background color */
+    border-radius: 5px;
+    overflow: hidden;
+    /* Hide overflowing content */
+    height: 100vh;
+    /* Take full height of the viewport */
+    width: fit-content;
+    /* Adjust the width as needed */
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    margin-right: 70px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: block;
+    /* Make links block-level for full height */
+    padding: 8px;
+    /* Add padding for better clickability */
+}
+
+.menu a:hover {
+    color: #007bff;
+    /* Change color on hover to a primary color */
+}
+
+.content {
+    flex: 1;
+    /* Take the remaining space */
+    padding: 20px;
+}
+
+.content h2 {
+    color: #007bff;
+    /* Header color */
+}
+
+.content h3 {
+    color: #075ab3;
+    margin-top: 1em;
+    text-align: center;
+}
+.content h4 {
+    color: #075ab3;
+    margin-top: 1em;
+    text-align: center;
+}
+
+section {
+    margin-top: 3em;
+}
+
+@media screen and (max-width: 768px) {
+    .syllabus {
+        flex-direction: column;
+        /* Stack items vertically on small screens */
+    }
+
+    .menu {
+        width: 100%;
+        /* Full width on small screens */
+        height: auto;
+        /* Auto height on small screens */
+    }
+}
